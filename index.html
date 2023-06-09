@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-signin-client_id"
+    content="609205729604-avrf6kdk4sss8k38j209m2f41a2f2g3s.apps.googleusercontent.com">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="main-container">
+    <div class="container">
+      <div class="greeting">
+        <h1 id="greeting"></h1>
+        <span class="logout"><i class="fa-solid fa-arrow-right-from-bracket"></i></span>
+      </div>
+
+      <div class="weather">
+        <h1>오늘의 날씨</h1>
+        <div class="weather-today">
+          <span class="weather-icon"><i class="fa-regular fa-circle-question"></i></span>
+          <div class="weather-main">
+            <span class="weather-info">알 수 없음</span>
+            <span class="weather-city">알 수 없음</span>
+          </div>
+        </div>
+        <div class="weather-etc">
+          <span class="weather-humidity">알 수 없음</span>
+          <span class="weather-tempmax">알 수 없음</span>
+          <span class="weather-tempmin">알 수 없음</span>
+        </div>
+        <div class="weather-daily">
+          <span class="weather-tempmax">알 수 없음</span>
+          <span class="weather-tempmin">알 수 없음</span>
+        </div>
+      </div>
+
+      <div class="quote">
+        <h2>오늘의 명언</h2>
+        <p class="quote-text"></p>
+        <p class="quote-author"></p>
+      </div>
+
+      <div class="todo">
+        <h1>To Do List</h1>
+        <form id="todo-form">
+          <input required type="text">
+        </form>
+        <ul class="todo-list"></ul>
+      </div>
+
+      <div class="clock">
+        <h2 class="clock-time"></h2>
+        <h2 class="clock-date"></h2>
+      </div>
+
+      <div class="calendar">
+        <div class="cal-title">
+          <span class="cal-prev"><i class="fa-solid fa-angle-left"></i></span>
+          <span class="cal-month"></span>
+          <span class="cal-year"></span>
+          <span class="cal-next"><i class="fa-solid fa-angle-right"></i></span>
+        </div>
+        <table class="cal-table">
+          <thead>
+            <tr>
+              <th>일</th>
+              <th>월</th>
+              <th>화</th>
+              <th>수</th>
+              <th>목</th>
+              <th>금</th>
+              <th>토</th>
+            </tr>
+          </thead>
+          <tbody class="cal-body"></tbody>
+        </table>
+      </div>
+
+      <div class="shortcut">
+        <a href="https://www.google.com" class="shortcut-icon" target="_blank">
+          <img src="img/google.png" class="shortcut-image" width="50" height="50">
+        </a>
+        <a href="https://www.naver.com" class="shortcut-icon" target="_blank">
+          <img src="img/naver.png" class="shortcut-image" width="50" height="50">
+        </a>
+        <a href="https://www.youtube.com" class="shortcut-icon" target="_blank">
+          <img src="img/youtube.png" class="shortcut-image" width="50" height="50">
+        </a>
+        <a href="https://sso.hycu.ac.kr/" class="shortcut-icon" target="_blank">
+          <img src="img/hycu.png" class="shortcut-image" width="50" height="50">
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="login-container">
+    <div class="login">
+      <ul>
+        <li id="GgCustomLogin">
+          <a href="javascript:void(0)">
+            <span>Login with Google</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="https://kit.fontawesome.com/275bbeec46.js" crossorigin="anonymous"></script>
+  <script src="js/login.js"></script>
+  <script src="js/weather.js"></script>
+  <script src="js/quote.js"></script>
+  <script src="js/todo.js"></script>
+  <script src="js/clock.js"></script>
+  <script src="js/calendar.js"></script>
+
+</body>
+
+</html>
