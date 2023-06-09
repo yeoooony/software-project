@@ -116,7 +116,29 @@
   <script src="js/todo.js"></script>
   <script src="js/clock.js"></script>
   <script src="js/calendar.js"></script>
-
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyDrGv0cdngMyX3t5QHFzB_RxLCA3A8nhtI",
+      authDomain: "login-f8780.firebaseapp.com",
+      projectId: "login-f8780",
+      storageBucket: "login-f8780.appspot.com",
+      messagingSenderId: "847245579941",
+      appId: "1:847245579941:web:9b620c9e982781a08bdf4c",
+      measurementId: "G-XEYC7Y0VEM"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
 </body>
 
 </html>
